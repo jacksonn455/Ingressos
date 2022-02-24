@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
+</head>
+<body>
+  <div id="login-container">
+    <ul id="mensagens-erro"></ul>
+    <form id="form-login" action="/user/login" method="post">
+      <p><label for="email">E-mail</label><input id="email" type="email" name="email" required/></p>
+      <p><label for="password">Senha</label><input id="password" type="text" name="password" required/></p>
+      <a href="/register" id="forgot-pass">Registrar</a>
+      <p><input type="submit" value="Entrar" /></p>
+    </form>
+  </div>
+  <script src="/js/login.js"></script>
+</body>
+</html>
