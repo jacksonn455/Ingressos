@@ -12,7 +12,6 @@ routes.set('views', path.join(__dirname, '../views'));
 routes.use(express.static(path.join('C:/Users/jacks/Ingressos/public')));
 
 const UserController = require("../controllers/UserController");
-const NovaPiadaController = require("../controllers/NovaPiadaController");
 
 routes.get("/", async ({res}) => {
   try {
@@ -30,21 +29,8 @@ routes.get("/", async ({res}) => {
     res.render("home");
   });
 
-  routes.get("/novapiada", async ({res}) => {
-    res.render("nova-piada");
-  });
-
   routes.get("/error", async ({res}) => {
     res.render("error");
-  });
-
-  routes.get("/piadas", async (req, res) => {
-    try {
-      const testePiada = await novaPiada.find({});
-      res.render("piadas", {testePiada:testePiada});;
-    } catch (e) {
-      res.status(500).send({message: 'Falha ao carregar as piadas.'});
-    }
   });
 
 routes.post('/user/register', async (req, res) => {
@@ -78,22 +64,6 @@ routes.post("/user/login", async (req, res) => {
   }  
 } catch (err) {
   res.redirect("/error")
-  }
-});
-
-routes.post("/jokes/create", async (req, res) => {
- 
-  const name = req.body.name;
-  const email = req.body.email;
-  const text = req.body.text;
-
-  const piada = new novaPiada({ name, email, text });
- 
-  try {
-    await piada.save();
-    res.redirect("/piadas");
-  } catch (err) {
-    console.log(err);
   }
 });
 

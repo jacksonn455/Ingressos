@@ -10,10 +10,6 @@ API utilizando Nodejs + Express + Mongodb
 
 Modelagem de banco de dados utilizando mongoose
 
-Criptografia de campos sensíveis utilizando bcrypt
-
-Autenticação de usuários utilizando jwt (jsonwebtoken)
-
 Gerenciando variáveis ambiente utilizando .env
 
 Para rodar a aplicação utilize o comando: npm install, e depois nodemon -r dotenv/config .\app.js
@@ -31,8 +27,6 @@ body JSON: {
 
 POST: http://localhost:7001/user/login
 
-passando no header a authorização JWT
-ex: auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMDk5ZjVhZDQ5MzQ5MjNmMDFiOTgxZCIsImlhdCI6MTY0NDc5ODkwNiwiZXhwIjoxNjQ1NDAzNzA2fQ._zRPhDL5_OlYFv4aZ-i_YTlbFCbCQDmcqW76rRL_dnM
 
 body JSON: {
 	"email":"jacksonmagnabosco@hotmail.com",
