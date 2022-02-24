@@ -3,6 +3,7 @@ INGRESSOS
 
 - Metodologia: 
 Trello com a metodologia Scrum para gerenciamento do projeto.
+https://trello.com/b/FjWqn6Yj/mb-labs
  ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/trello.png)
 
 - Back-End: 
