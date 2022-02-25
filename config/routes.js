@@ -29,6 +29,10 @@ routes.get("/", async ({res}) => {
     res.render("home");
   });
 
+  routes.get("/venda", async ({res}) => {
+    res.render("venda");
+  });
+
   routes.get("/error", async ({res}) => {
     res.render("error");
   });
