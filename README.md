@@ -63,7 +63,7 @@ Home:
 GET: http://localhost:7001/home
  ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/home.png)
 
- Home:
+ Error:
 =====================
 GET: http://localhost:7001/home
  ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/error.png)
