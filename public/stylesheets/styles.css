@@ -58,6 +58,18 @@ a:hover {
   text-align: center;
 }
 
+#venda-container {
+  background-color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 600px;
+  padding: 20px 30px;
+  margin-top: 10vh;
+  border-radius: 10px;
+  text-align: center;
+}
+
 /* formulário */
 form {
   margin-top: 30px;
@@ -67,7 +79,8 @@ form {
 
 .product-card{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width: 400px;
+    width: 900px;
+    height: 550px;
     background: #ecedef;
     padding: 40px;
     position: absolute;
@@ -116,7 +129,7 @@ form {
   }
   .product-price{
     color: red;
-    font-size: 26px;
+    font-size: 30px;
   }
   .product-button{
     margin-left: auto;
