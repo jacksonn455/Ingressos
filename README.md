@@ -78,7 +78,7 @@ GET: http://localhost:7001/teatro1
 Checkout:
 =====================
 GET: http://localhost:7001/checkout
- ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/ingressos)
+ ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/ingressos.png)
 
  Error:
 =====================
