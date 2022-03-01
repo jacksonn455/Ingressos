@@ -70,7 +70,7 @@ GET: http://localhost:7001/venda
  
 Quantidade:
 =====================
-GET: http://localhost:7001/venda
+GET: http://localhost:7001/teatro1
 ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/teatro1.png)
 ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/teatro2.png)
 ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/teatro3.png)
