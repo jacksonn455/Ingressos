@@ -1,6 +1,7 @@
+const { Decimal128 } = require("mongodb");
 const mongoose = require("mongoose");
 
-const Piada = new mongoose.Schema({
+const Products = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -9,8 +10,12 @@ const Piada = new mongoose.Schema({
     type: String,
     required: true,
   },
-  text: {
-    type: String,
+  value: {
+    type: Number,
+    required: true,
+  },
+  totalValue: {
+    type: Decimal128,
     required: true,
   },
   created: {
@@ -19,4 +24,4 @@ const Piada = new mongoose.Schema({
      }
 });
 
-module.exports = mongoose.model("Piada", Piada);
+module.exports = mongoose.model("Products", Products);

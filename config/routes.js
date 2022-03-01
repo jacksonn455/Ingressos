@@ -3,6 +3,7 @@ const bodyparser = require('body-parser');
 const routes = express();
 routes.use(express.json());
 const path = require('path');
+var novaVenda = require('../models/products')
 
 routes.use(bodyparser.urlencoded({ extended: false }));
 routes.use(bodyparser.json() );
@@ -44,6 +45,15 @@ routes.get("/", async ({res}) => {
     res.render("teatro3");
   });
 
+  routes.get("/checkout", async (req, res) => {
+    try {
+      const testeVenda = await novaVenda.find({});
+      res.render("produtos", {testeVenda:testeVenda});;
+    } catch (e) {
+      res.status(500).send({message: 'Falha ao carregar as Vendas.'});
+    }
+  });
+
   routes.get("/error", async ({res}) => {
     res.render("error");
   });
@@ -79,6 +89,23 @@ routes.post("/user/login", async (req, res) => {
   }  
 } catch (err) {
   res.redirect("/error")
+  }
+});
+
+routes.post("/products/create", async (req, res) => {
+ 
+  const name = req.body.name;
+  const email = req.body.email;
+  const value = req.body.value;
+  const totalValue = (req.body.value * 49.99).toFixed(2)
+
+  const venda = new novaVenda({ name, email, value, totalValue });
+ 
+  try {
+    await venda.save();
+    res.redirect("/checkout");
+  } catch (err) {
+    console.log(err);
   }
 });
 
