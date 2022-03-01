@@ -1,0 +1,3 @@
+.banner{
+    position: relative; /* ele estava sendo absoluto a pagina, e assim ficou relativo ao seu pai */
+}

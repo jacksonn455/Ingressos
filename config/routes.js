@@ -3,7 +3,6 @@ const bodyparser = require('body-parser');
 const routes = express();
 routes.use(express.json());
 const path = require('path');
-const novaPiada = require('../models/nova-piada')
 
 routes.use(bodyparser.urlencoded({ extended: false }));
 routes.use(bodyparser.json() );
@@ -31,6 +30,18 @@ routes.get("/", async ({res}) => {
 
   routes.get("/venda", async ({res}) => {
     res.render("venda");
+  });
+
+  routes.get("/teatro1", async ({res}) => {
+    res.render("teatro1");
+  });
+
+  routes.get("/teatro2", async ({res}) => {
+    res.render("teatro2");
+  });
+
+  routes.get("/teatro3", async ({res}) => {
+    res.render("teatro3");
   });
 
   routes.get("/error", async ({res}) => {

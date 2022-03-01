@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Festival Planeta Brasil</title>
+        <link href="./stylesheets/menu/normalize.css" rel="stylesheet" />
+        <link href="./stylesheets/reset.css" rel="stylesheet" />
+        <link href="./stylesheets/cabecalho.css" rel="stylesheet" />
+        <link href="./stylesheets/menu/menu-item.css" rel="stylesheet" /> <!---Atomic design-->
+        <link href="./stylesheets/menu/menu-lista.css" rel="stylesheet" />
+        <link href="./stylesheets/menu/menu.link.css" rel="stylesheet" />
+        <link href="./stylesheets/banner/banner.css" rel="stylesheet" />
+        <link href="./stylesheets/banner/banner-imagem.css" rel="stylesheet" />
+        <link href="./stylesheets/banner/banner-titulo.css" rel="stylesheet" />
+        <link href="./stylesheets/sobre/sobre.css" rel="stylesheet" />
+        <link href="./stylesheets/sobre/sobre-descricao.css" rel="stylesheet" />
+        <link href="./stylesheets/sobre/sobre-titulo.css" rel="stylesheet" />
+        <link href="./stylesheets/receita/receita-botao.css" rel="stylesheet" />
+        <link href="./stylesheets/receita/receita-conteudo.css" rel="stylesheet" />
+        <link href="./stylesheets/receita/receita-descricao.css" rel="stylesheet" />
+        <link href="./stylesheets/receita/receita-titulo.css" rel="stylesheet" />
+        <link href="./stylesheets/receita/receita.css" rel="stylesheet" />
+        <link href="./stylesheets/receita/receita.imagem.css" rel="stylesheet" />
+        <link href="./stylesheets/receitas.css" rel="stylesheet" />
+        <link href="./stylesheets/quemSomos/quemSomos-descricao.css" rel="stylesheet" />
+        <link href="./stylesheets/quemSomos/quemSomos-titulo.css" rel="stylesheet" />
+        <link href="./stylesheets/quemSomos/quemSomos.css" rel="stylesheet" />
+        <link href="./stylesheets/pessoa/pessoa-funcao.css.css" rel="stylesheet" />
+        <link href="./stylesheets/pessoa/pessoa-imagem.css" rel="stylesheet" />
+        <link href="./stylesheets/pessoa/pessoa-nome.css" rel="stylesheet" />
+        <link href="./stylesheets/pessoa/pessoa.css" rel="stylesheet" />
+        <link href="./stylesheets/pessoas.css" rel="stylesheet" />
+        <link href="./stylesheets/rodape.css" rel="stylesheet" />
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
+    </head>
+    <body>
+        <header class="cabecalho">
+        </header>
+        <section    class="banner">
+            <img class="banner__imagem" src="/images/carrocel2.png"/>
+        </section>
+        <section class="sobre">
+            <h2 class="sobre__titulo">Quantidade de ingressos</h2>
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <button type="button" id="menos" onclick="less()"><i class="fa fa-minus-circle"aria-hidden="true">-</i></button> &nbsp; <input type="number" name="numero" id="num"> &nbsp; <button type="button" id="mais" onclick="more()">+<i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </body>
+<script>
+var numero = 0;
+
+function less() {
+  numero--;
+  setValue(numero);
+}
+
+function more() {
+  numero++;
+  setValue(numero);
+}
+
+function setValue(value) {
+  document.getElementById('num').value = value;
+}
+
+setValue(numero);
+    </script>
+</html>
