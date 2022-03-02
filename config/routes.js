@@ -33,15 +33,15 @@ routes.get("/", async ({res}) => {
     res.render("venda");
   });
 
-  routes.get("/teatro1", async ({res}) => {
+  routes.get("/O-MISTERIO-DE-IRMA-VAP", async ({res}) => {
     res.render("teatro1");
   });
 
-  routes.get("/teatro2", async ({res}) => {
+  routes.get("/Festival-Planeta-Brasil", async ({res}) => {
     res.render("teatro2");
   });
 
-  routes.get("/teatro3", async ({res}) => {
+  routes.get("/Mandarin-Rio-2022", async ({res}) => {
     res.render("teatro3");
   });
 

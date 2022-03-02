@@ -81,9 +81,11 @@ GET: http://localhost:7001/venda
  
 Quantidade:
 =====================
-GET: http://localhost:7001/teatro1
+GET: http://localhost:7001/O-MISTERIO-DE-IRMA-VAP
 ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/teatro1.png)
+GET: http://localhost:7001/Festival-Planeta-Brasil
 ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/teatro2.png)
+GET: http://localhost:7001/Mandarin-Rio-2022
 ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/teatro3.png)
 
 Checkout:
