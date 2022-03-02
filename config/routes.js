@@ -68,7 +68,7 @@ routes.post('/user/register', async (req, res) => {
  
   try {
     await user.save();
-    res.redirect("/home");
+    res.status(201).redirect("/home");
   } catch (err) {
     console.log(err);
   }
@@ -83,7 +83,7 @@ routes.post("/user/login", async (req, res) => {
   const user = await Users.findOne({ email })
   try {
   if(email == user.email && password == user.password){
-    res.redirect("/home");
+    res.status(201).redirect("/home");
   } else {
     res.redirect("/error")
   }  
@@ -103,7 +103,7 @@ routes.post("/products/create", async (req, res) => {
  
   try {
     await venda.save();
-    res.redirect("/checkout");
+    res.status(200).redirect("/checkout");
   } catch (err) {
     console.log(err);
   }

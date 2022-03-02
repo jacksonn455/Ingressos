@@ -35,6 +35,17 @@ body JSON: {
 }
 
  ![](https://github.com/jacksonn455/Triider/blob/main/public/images/login-in.png)
+
+POST: http://localhost:7001/products/create
+
+
+body JSON: {
+	"name":"jackson teste",
+	"email":"jacksonmagnabosco555@hotmail.com",
+	"value": 8
+}
+
+ ![](https://github.com/jacksonn455/Triider/blob/main/public/images/total.png)
  
  - Mongo:
   ![](https://github.com/jacksonn455/Triider/blob/main/public/images/mongo.png)
