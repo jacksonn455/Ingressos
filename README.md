@@ -45,7 +45,7 @@ body JSON: {
 	"value": 8
 }
 
- ![](https://github.com/jacksonn455/Triider/blob/main/public/images/total.png)
+ ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/total.png)
  
  - Mongo:
   ![](https://github.com/jacksonn455/Triider/blob/main/public/images/mongo.png)
