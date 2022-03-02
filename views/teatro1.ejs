@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>O MISTÉRIO DE IRMA VAP</title>
-        <link href="./stylesheets/menu/normalize.css" rel="stylesheet" />
-        <link href="./stylesheets/reset.css" rel="stylesheet" />
-        <link href="./stylesheets/cabecalho.css" rel="stylesheet" />
-        <link href="./stylesheets/menu/menu-item.css" rel="stylesheet" /> <!---Atomic design-->
-        <link href="./stylesheets/menu/menu-lista.css" rel="stylesheet" />
-        <link href="./stylesheets/menu/menu.link.css" rel="stylesheet" />
-        <link href="./stylesheets/banner/banner.css" rel="stylesheet" />
-        <link href="./stylesheets/banner/banner-imagem.css" rel="stylesheet" />
-        <link href="./stylesheets/banner/banner-titulo.css" rel="stylesheet" />
-        <link href="./stylesheets/sobre/sobre.css" rel="stylesheet" />
-        <link href="./stylesheets/sobre/sobre-descricao.css" rel="stylesheet" />
-        <link href="./stylesheets/sobre/sobre-titulo.css" rel="stylesheet" />
-        <link href="./stylesheets/receita/receita-botao.css" rel="stylesheet" />
-        <link href="./stylesheets/receita/receita-conteudo.css" rel="stylesheet" />
-        <link href="./stylesheets/receita/receita-descricao.css" rel="stylesheet" />
-        <link href="./stylesheets/receita/receita-titulo.css" rel="stylesheet" />
-        <link href="./stylesheets/receita/receita.css" rel="stylesheet" />
-        <link href="./stylesheets/receita/receita.imagem.css" rel="stylesheet" />
-        <link href="./stylesheets/receitas.css" rel="stylesheet" />
-        <link href="./stylesheets/quemSomos/quemSomos-descricao.css" rel="stylesheet" />
-        <link href="./stylesheets/quemSomos/quemSomos-titulo.css" rel="stylesheet" />
-        <link href="./stylesheets/quemSomos/quemSomos.css" rel="stylesheet" />
-        <link href="./stylesheets/pessoa/pessoa-funcao.css.css" rel="stylesheet" />
-        <link href="./stylesheets/pessoa/pessoa-imagem.css" rel="stylesheet" />
-        <link href="./stylesheets/pessoa/pessoa-nome.css" rel="stylesheet" />
-        <link href="./stylesheets/pessoa/pessoa.css" rel="stylesheet" />
-        <link href="./stylesheets/pessoas.css" rel="stylesheet" />
-        <link href="./stylesheets/rodape.css" rel="stylesheet" />
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
-    </head>
-    <body>
-        <header class="cabecalho">
-        </header>
-        <section    class="banner">
-            <img class="banner__imagem" src="/images/carrocel1.png"/>
-        </section>
-        <section class="sobre">
-            <h2 class="sobre__titulo">Quantidade de ingressos</h2>
-            <form id="register-form"  action="/products/create" method="post">
 
-              <div class="half-box spacing">
-                  <label for="name">Nome</label>
-                  <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16" required>
-              </div>
-              <div class="half-box">
-                  <label for="email">E-mail</label>
-                  <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-required data-only-letters required>
-              </div>
-            <div class="full-box">
-            <label for="text">Quantidade</label>
-            <input type="number" name="value" id="value" required>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>O MISTÉRIO DE IRMA VAP</title>
+    <link href="./stylesheets/menu/normalize.css" rel="stylesheet" />
+    <link href="./stylesheets/reset.css" rel="stylesheet" />
+    <link href="./stylesheets/cabecalho.css" rel="stylesheet" />
+    <link href="./stylesheets/menu/menu-item.css" rel="stylesheet" />
+    <!---Atomic design-->
+    <link href="./stylesheets/menu/menu-lista.css" rel="stylesheet" />
+    <link href="./stylesheets/menu/menu.link.css" rel="stylesheet" />
+    <link href="./stylesheets/banner/banner.css" rel="stylesheet" />
+    <link href="./stylesheets/banner/banner-imagem.css" rel="stylesheet" />
+    <link href="./stylesheets/banner/banner-titulo.css" rel="stylesheet" />
+    <link href="./stylesheets/sobre/sobre.css" rel="stylesheet" />
+    <link href="./stylesheets/sobre/sobre-descricao.css" rel="stylesheet" />
+    <link href="./stylesheets/sobre/sobre-titulo.css" rel="stylesheet" />
+    <link href="./stylesheets/receita/receita-botao.css" rel="stylesheet" />
+    <link href="./stylesheets/receita/receita-conteudo.css" rel="stylesheet" />
+    <link href="./stylesheets/receita/receita-descricao.css" rel="stylesheet" />
+    <link href="./stylesheets/receita/receita-titulo.css" rel="stylesheet" />
+    <link href="./stylesheets/receita/receita.css" rel="stylesheet" />
+    <link href="./stylesheets/receita/receita.imagem.css" rel="stylesheet" />
+    <link href="./stylesheets/receitas.css" rel="stylesheet" />
+    <link href="./stylesheets/quemSomos/quemSomos-descricao.css" rel="stylesheet" />
+    <link href="./stylesheets/quemSomos/quemSomos-titulo.css" rel="stylesheet" />
+    <link href="./stylesheets/quemSomos/quemSomos.css" rel="stylesheet" />
+    <link href="./stylesheets/pessoa/pessoa-funcao.css.css" rel="stylesheet" />
+    <link href="./stylesheets/pessoa/pessoa-imagem.css" rel="stylesheet" />
+    <link href="./stylesheets/pessoa/pessoa-nome.css" rel="stylesheet" />
+    <link href="./stylesheets/pessoa/pessoa.css" rel="stylesheet" />
+    <link href="./stylesheets/pessoas.css" rel="stylesheet" />
+    <link href="./stylesheets/rodape.css" rel="stylesheet" />
+    <link href="./stylesheets/piada.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
+</head>
+
+<body>
+    <section class="banner">
+        <img class="banner__imagem" src="/images/carrocel1.png" />
+    </section>
+    <section class="sobre">
+        <h2 class="sobre__titulo">Quantidade de ingressos</h2>
+        <form id="register-form" action="/products/create" method="post">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required
+                            data-min-length="3" data-max-length="16" required>
+                    </div>
+                    <div class="col-sm">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-required
+                            data-only-letters required>
+                    </div>
+                    <div class="col-sm">
+                        <label for="value">Quantidade</label>
+                        <input type="number" name="value" id="value" required>
+                    </div>
+                </div>
+                <div class="container w-25">
+                    <p><input class="botao" type="submit" value="Comprar" /></p>
+                </div>
             </div>
-              <div class="half-box botao">
-                <button type="submit">Comprar</button>
-              </div>
-            </form>
-        </section>
-    </body>
+        </form>
+    </section>
+</body>
+
 </html>

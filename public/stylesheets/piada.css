@@ -23,7 +23,7 @@ a {
 }
 
 body {
-  padding-top: 5vh;
+  padding-top: 0;
   background-image: url('../images/teatro2.jpg');
   background-size: cover;
   background-position-y: -150px;
@@ -125,7 +125,7 @@ input[type="submit"] {
 }
 
 .botao{
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .principal-texto{
